@@ -1,0 +1,107 @@
+.banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 600px;
+    .banner-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        .right-side {
+            width: 50%;
+            background: #F7D65C;
+            padding: 18px 50px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .changeable {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                width: 470px;
+                margin-right: auto;
+                .details {
+                    h2 {
+                        font-size: 30px;
+                        color: #20639C;
+                        padding-bottom: 3px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-family: var(--secFont);
+                        font-size: 16px;
+                        padding-top: 38px;
+                        max-width: 375px;
+                    }
+                }
+                .social {
+                    &.grid {
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        grid-gap: 17px;
+                        margin-top: 27px;
+                    }
+                }
+            }
+        }
+        .left-side {
+            width: 50%;
+            padding: 20px 50px;
+            color: white;
+            text-align: center;
+            background: #20639C;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .signform {
+                width: 470px;
+                h2 {
+                    font-size: 28px;
+                }
+                form {
+                    margin: 55px 0 40px;
+                    .field {
+                        margin-bottom: 13px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        .input {
+                            border: 1px solid #9FBED8;
+                            padding: 10px 13px;
+                            color: white;
+                            font-size: 18px;
+                            font-family: var(--secFont);
+                            &::placeholder {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .btn-outline {
+                    border-radius: 23px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .banner-footer {
+        background: white;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        margin-top: auto;
+        p {
+            font-size: 16px;
+            font-family: var(--secFont);
+            width: 250px;
+            margin: 0 auto;
+        }
+    }
+}

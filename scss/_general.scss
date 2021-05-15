@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primeFont: 'GE SS Two';
+    --secFont: 'ArbFONTS Droid Naskh';
+}
+
+@font-face {
+    font-family: 'Droid Arabic Naskh';
+    src: url('../webFont/Droid\ Arabic\ Naskh\ Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../webfont/GE\ SS\ Two\ Medium.otf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    line-height: 1.4;
+    font-family: var(--primeFont);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.input {
+    outline: 0;
+    border: 0;
+    background: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    width: 100%;
+    font-family: var(--secFont);
+}

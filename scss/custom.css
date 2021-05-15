@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Droid Arabic Naskh");
+@import url("https://fonts.googleapis.com/css?family=GE SS Two");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primeFont: 'GE SS Two';
+  --secFont: 'ArbFONTS Droid Naskh';
+}
+
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  src: url("../webFont/Droid Arabic Naskh Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'GE SS Two';
+  src: url("../webfont/GE SS Two Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  line-height: 1.4;
+  font-family: var(--primeFont);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.input {
+  outline: 0;
+  border: 0;
+  background: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  width: 100%;
+  font-family: var(--secFont);
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  background: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.btn-outline {
+  border: 1px solid #F7D65C;
+  color: #F7D65C;
+  background: transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn-outline:hover {
+  border: 1px solid transparent;
+  color: #20639C;
+  background: white;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.banner .banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.banner .banner-content .right-side {
+  width: 50%;
+  background: #F7D65C;
+  padding: 18px 50px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-content .right-side .changeable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 470px;
+  margin-right: auto;
+}
+
+.banner .banner-content .right-side .changeable .details h2 {
+  font-size: 30px;
+  color: #20639C;
+  padding-bottom: 3px;
+}
+
+.banner .banner-content .right-side .changeable .details span {
+  font-size: 16px;
+}
+
+.banner .banner-content .right-side .changeable .details p {
+  font-family: var(--secFont);
+  font-size: 16px;
+  padding-top: 38px;
+  max-width: 375px;
+}
+
+.banner .banner-content .right-side .changeable .social.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 17px;
+  margin-top: 27px;
+}
+
+.banner .banner-content .left-side {
+  width: 50%;
+  padding: 20px 50px;
+  color: white;
+  text-align: center;
+  background: #20639C;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-content .left-side .signform {
+  width: 470px;
+}
+
+.banner .banner-content .left-side .signform h2 {
+  font-size: 28px;
+}
+
+.banner .banner-content .left-side .signform form {
+  margin: 55px 0 40px;
+}
+
+.banner .banner-content .left-side .signform form .field {
+  margin-bottom: 13px;
+}
+
+.banner .banner-content .left-side .signform form .field:last-child {
+  margin-bottom: 0;
+}
+
+.banner .banner-content .left-side .signform form .field .input {
+  border: 1px solid #9FBED8;
+  padding: 10px 13px;
+  color: white;
+  font-size: 18px;
+  font-family: var(--secFont);
+}
+
+.banner .banner-content .left-side .signform form .field .input::-webkit-input-placeholder {
+  color: white;
+}
+
+.banner .banner-content .left-side .signform form .field .input:-ms-input-placeholder {
+  color: white;
+}
+
+.banner .banner-content .left-side .signform form .field .input::-ms-input-placeholder {
+  color: white;
+}
+
+.banner .banner-content .left-side .signform form .field .input::placeholder {
+  color: white;
+}
+
+.banner .banner-content .left-side .signform .btn-outline {
+  border-radius: 23px;
+  padding: 10px;
+}
+
+.banner .banner-footer {
+  background: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.banner .banner-footer p {
+  font-size: 16px;
+  font-family: var(--secFont);
+  width: 250px;
+  margin: 0 auto;
+}
+
+footer {
+  background: white;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+
+footer .container p {
+  width: 250px;
+  font-family: var(--secFont);
+  font-size: 16px;
+}
+
+@media all and (max-width: 768px) {
+  .banner {
+    display: block;
+    height: unset;
+    min-height: 0;
+  }
+  .banner .banner-content {
+    display: block;
+  }
+  .banner .banner-content .right-side {
+    width: 100%;
+    padding: 40px 50px;
+  }
+  .banner .banner-content .right-side .changeable {
+    margin: 0 auto;
+  }
+  .banner .banner-content .left-side {
+    width: 100%;
+    padding: 40px 50px;
+  }
+  .banner .banner-content .left-side .signform {
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .banner .banner-content {
+    display: block;
+  }
+  .banner .banner-content .right-side {
+    height: unset;
+    min-height: 100%;
+  }
+  .banner .banner-content .left-side {
+    min-height: 100%;
+  }
+}
+
+@media all and (max-width: 280px) {
+  .banner .banner-content .right-side {
+    padding: 20px;
+  }
+  .banner .banner-content .right-side .changeable .details h2 {
+    font-size: 20px;
+  }
+  .banner .banner-content .left-side {
+    padding: 20px;
+  }
+  .banner .banner-content .left-side .signform h2 {
+    font-size: 20px;
+  }
+  .banner .banner-content .left-side .signform form {
+    margin-top: 35px;
+  }
+  .banner .banner-footer p {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 232px) {
+  .banner .banner-footer p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,83 @@
+@media all and (max-width: 768px) {
+    .banner {
+        display: block;
+        height: unset;
+        min-height: 0;
+        .banner-content {
+            display: block;
+            .right-side {
+                width: 100%;
+                padding: 40px 50px;
+                .changeable {
+                    margin: 0 auto;
+                }
+            }
+            .left-side {
+                width: 100%;
+                padding: 40px 50px;
+                .signform {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .banner {
+        .banner-content {
+            display: block;
+            .right-side {
+                height: unset;
+                min-height: 100%;
+            }
+            .left-side {
+                min-height: 100%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 280px) {
+    .banner {
+        .banner-content {
+            .right-side {
+                padding: 20px;
+                .changeable {
+                    .details {
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .left-side {
+                padding: 20px;
+                .signform {
+                    h2 {
+                        font-size: 20px;
+                    }
+                    form {
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+        .banner-footer {
+            p {
+                width: 100%;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 232px) {
+    .banner {
+        .banner-footer {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
